@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Fredericka+the+Great&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #222;
+    color: #ddd;
+    display: flex;
+    font-family: 'Dosis', sans-serif;
+    /* text-align: center; */
+}
+
+.left {
+    flex: 1;
+    padding: 2rem;
+}
+
+.paint-area {
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.cell {
+    border: 1px solid #555;
+    border-collapse: collapse;
+    flex: 1;
+}
+
+.pixels-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+datalist {
+    display: flex;
+    justify-content: space-between;
+    color: red;
+    width: 100%;
+}
+
+.title {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 5rem;
+    text-align: center;
+    margin: 2rem 0;
+}
