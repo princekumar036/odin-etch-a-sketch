@@ -10,18 +10,41 @@
 <body>
     <div class="left">
         <p class="title">Etch-a-Sketch</p>
-        <div class="pixels-container">
-            <label for="pixels">Select number of pixels ( <span class="pixels-value">16</span> )</label>
-            <input type="range" name="pixels" id="pixels" min="1" max="100" value="16">
+
+        <div class="density-container">
+            <label for="density-selector">Grid Density ( 
+                <span class="density-value">20</span> x 
+                <span class="density-value">20</span> )
+            </label>
+            <input type="range" name="density-selector" id="density-selector" min="10" max="60" value="20">
+
             <datalist id="tickmarks">
-                <option value="1" label="1"></option>
-                <option value="100" label="100"></option>
+                <option value="10" label="10"></option>
+                <option value="60" label="60"></option>
             </datalist>
+        </div>
+
+        <div class="mode">
+            <p>Mode</p>
+            <div>
+                <button class="mode-btn mode-solid active" value="solid">Solid</button>
+                <button class="mode-btn mode-rainbow" value="rainbow">Rainbow</button>
+                <button class="mode-btn mode-erase" value="erase">Erase</button>
+            </div>
+        </div>
+
+        <div class="picker-container">
+            <label for="color-picker">Select paint color</label>
+            <input type="color" name="color-picker" id="color-picker">
+        </div>
+
+        <div>
+            <button class="reset-btn">Reset</button>
         </div>
     </div>
 
     <div class="right">
-        <div class="paint-area"></div>
+        <div class="grid"></div>
     </div>
 </body>
 <script src="script.js"></script>
